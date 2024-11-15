@@ -1,0 +1,48 @@
+/* Univerzalini selektor */
+*{
+    font-family: "Geist Mono", serif;;
+
+}
+
+
+
+
+/* element selektor */
+h3 {
+    color: chartreuse;
+    background-color: beige;
+}
+
+h4 {
+    color: #785453;
+}
+
+p {
+    font-weight:300;
+    font-size: 20;
+}
+div {
+    width: 400px;
+    height: 400px;
+    background-color: darkgray;
+    text-align: center;
+}
+
+/* Selektor klase */
+.naslov {
+    color: brown;
+
+}
+
+.rgb { 
+    color: rgb(6, 235, 71);
+
+}
+.amet {
+    background-color: blanchedalmond;
+}
+
+/* Selektor id */
+#naslov1 {
+    color: chocolate;
+}
