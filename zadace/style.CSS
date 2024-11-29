@@ -1,0 +1,74 @@
+h1 {
+    font-size: 3rem;
+    font-weight: 600;
+  }
+
+  h2 {
+    color: #4CAF50;
+  }
+  main {
+    background-color: #ECEFF1;
+    padding: 20px;
+  }
+
+  /* Stil za prvi paragraf */
+.paragraph-small {
+    font-size: 16px;
+    color: #37474F;
+  }
+  
+  /* Stil za drugi paragraf */
+  .paragraph-medium {
+    font-size: 18px;
+    color: #546E7A;
+  }
+  
+  /* Stil za treći paragraf */
+  .paragraph-large {
+    font-size: 20px;
+    color: #78909C;
+  }
+  
+  ul.a {
+    list-style-type: circle;
+  }
+  
+  ul.b {
+    list-style-type: square;
+  }
+  
+  ul {
+    padding: 0;
+    margin: 0;
+  }
+  
+  li {
+    margin: 5px 0;
+  }
+  
+  
+  .highlight {
+    color: #FFC107;
+  }
+  
+  #main-title {
+    font-size: 4rem;
+  }
+  /* Stil za cijeli dokument */
+body {
+    background-color: #FAFAFA;
+}
+
+/* Stil za drugi paragraf */
+
+    p:nth-of-type(2) {
+    font-style: italic;
+    color: #03A9F4;   
+}
+
+
+    p:nth-of-type(3) {
+   background-color: rgb(255, 165, 0);
+   } 
+    
+    
