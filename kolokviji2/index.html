@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kolokviji</title>
+
+
+    <style>
+        /* Zadatak 1 */
+        p{
+            margin: 0;
+        }
+        .black {
+      display: inline-block;
+      width: 200px;
+      height: 250px;
+      background-color:black;
+     
+    }
+
+    .yellow {
+      display: inline-block;
+      width: 200px;
+      height: 250px;
+      background-color : yellow;
+      
+    }
+
+    .red {
+      display: inline-block;
+      width: 200px;
+      height: 250px;
+      background-color: red;
+     
+    }
+     /* Zadatak 2 */
+     .grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+            width: 300px;
+            margin: 20px auto;
+        }
+
+        .grid div {
+            background-color: lightblue;
+            text-align: center;
+            padding: 20px;
+            border: 1px solid black;
+        }
+        /* Zadatak 3 */
+        .box {
+            width: 200px;
+            height: 100px;
+            margin: 20px;
+            padding: 10px;
+            border: 2px solid black;
+            
+        }
+        .Jedan{
+            background-color: aquamarine;
+            font-size: 25px;
+            margin: 40px;
+            padding: 20px;
+            font-style: italic;
+        }
+        .Dva{
+            background-color: brown;
+            font-size: 29px;
+            margin: 50px;
+            padding: 30px;
+            font-style: oblique;
+        }
+        .Tri{
+            background-color: yellow;
+            font-size: 10px;
+            margin: 30px;
+            padding: 10px;
+            font-style: italic;
+        }
+        #Četiri{
+            background-color: blueviolet;
+            font-size: 15px;
+            margin: 60px;
+            padding: 60px;
+            font-style:inherit;
+        }
+        #Pet{
+            background-color: aquamarine;
+            font-size: 25px;
+            margin: 20px;
+            padding: 20px;
+            font-style:unset;
+        }
+        
+    </style>
+    
+</head>
+<body>
+    <h1>Kolokviji 2</h1>
+   <h2>Zadatak 1</h2>
+
+  <div class="black"></div>
+  <div class="yellow"></div>
+  <div class="red"></div>
+  <h2>Zadatak 2</h2>
+  <div class="grid">
+    <div>Matematika</div>
+    <div>Hrvatski</div>
+    <div>Engleski</div>
+    <div>Njemački</div>
+    <div>Likovni</div>
+    <div>Glazbeni</div>
+    <div>Priroda</div>
+    <div>Fizika</div>
+    <div>Kemija</div>
+    <div>Sat razrednika</div>
+    <div>TZK</div>
+    <div>Povijest</div>
+</div>
+<h2>Zadatak 3</h2>
+<div class="box"></div>
+<h2>Zadatak 4</h2>
+<p class="Jedan">Ja sam Jelena</p>
+<p class="Dva">Prezivam se Kokanović</p>
+<p class="Tri">Imam 23 godine</p>
+<p id="Četiri">Volim životinje</p>
+<p id="Pet">Najdraža hrana su mi palačinke</p>
+<h2>Zadatak 5</h2>
+     <script src="index.js"></script>
+  
+
+
+
+</body>
+</html>
