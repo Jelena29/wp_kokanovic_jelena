@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recepti</title>
+    <style>
+    body{
+        font-family:Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing:border-box;
+        background-color: #bb4e23;
+    }
+    header {
+       background-image: url('pozadina.jpg');
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            text-align: center;
+            padding: 40px 10px;
+    }
+
+    header h1 {
+        font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+    }
+
+    main {
+        display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+    }
+    section {
+        grid-column: span 3;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+    .recept img {
+        max-width: 100%;
+            border-radius: 10px;
+            border: 2px solid #ddd;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, opacity 0.3s ease;
+    }
+    .recept img:hover {
+            transform: scale(1.05);
+            opacity: 0.9;
+        }
+
+        h2 {
+            font-size: 2rem;
+            color: #300e1a;
+            margin-bottom: 15px;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+            color: #532a3d;
+        }
+
+        p, li {
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+    footer {
+        background-color: #300e1a;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+}
+footer a {
+            color: #be9e9e;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+        #kontakt {
+            background-color: #f5f5f5;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 25px;
+            margin: 30px auto;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        #kontakt input, #kontakt button {
+            font-size: 1rem;
+            padding: 10px;
+            margin: 10px 0;
+            width: calc(100% - 20px);
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        #kontakt input:focus, #kontakt button:hover {
+            border-color: #300e1a;
+            outline: none;
+            box-shadow: 0 0 5px rgba(48, 14, 26, 0.5);
+        }
+
+        #kontakt button {
+            background-color: #532a3d;
+            color: #fff;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        #kontakt button:hover {
+            background-color: #300e1a;
+        }
+
+        @media (max-width: 480px) {
+            body {
+                padding: 10px;
+            }
+            section {
+                padding: 15px;
+            }
+            h2 {
+                font-size: 1.5rem;
+            }
+            p, li {
+                font-size: 0.9rem;
+            }
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+
+</head>
+<body>
+    <header>
+        <h1> Slavonka s receptima </h1>
+        <p> "Ljubav prolazi kroz želudac."</p>
+    </header>
+
+    <main>
+        <section id="Predjela">
+            <h2>Predjela</h2>
+            <div class="recept">
+            <img src="https://slavonka.com.hr/wp-content/uploads/2022/01/Untitled-676-683x1024.jpg" alt="Predjelo">
+            <h3>Kremasto varivo</h3>
+            <p>Sve što vam treba je cvjetača. I ne brinite se, ne osjeti se uopće unutra tako da bez beda možete podvaliti svakome tko ju ne voli.</p>
+            <hr>
+            <h3>Potrebni sastojci:</h3>
+            <li>1 polovica pilećih prsa</li>
+            <li>300g smrznutih cvjetova cvjetače (može i svježa naravno, ja stavljam smrznutu jer takvu imam)</li>
+            <li>1 crveni luk</li>
+            <li>4 žlice kukuruza šećerca iz konzerv ili smrznutog</li>
+            <li>sol, papar, češnjak u granulama</li>
+            <li>1 žlica maslinovog ulja</li>
+            <hr>
+            <h4>Priprema variva:</h4>
+            <p>Za početak u posudu za kuhanje dodajte maslinovo ulje, a na tome popržite sitno nasjeckani crveni luk. 
+                Malo posolite da prije smekša.
+                 Na to dodajte polovicu pilećih prsa narezanu na kockice i pržite 3-4 minute.
+                 Na to dodajte cvjetove cvjetače pa podlijte vodom tako da prekrijete sav sadržaj + još centimetar iznad.
+                 Dodajte papra i češnjaka po ukusu. Kuhajte dok cvjetača ne bude skoz mekana.
+                 Ako želite komadiće cvjetače unutra, onda izvadite 70% cvjetače iz lonca,
+                 a ako ne želite, izvadite cjediljkom kompletnu cvjetaču u posudu za miksanje pa štapnim mikserom usitnite cvjetaču do kreme.
+                 Kremu vratite u lonac, promiješajte i dodajte kukuruz te pustite da prokuha.
+                 Kušajte, dodajte još začina i poslužite toplo.
+                 Možete dodati komadiće prženog kruha ili jesti uz svježi kruh. Možete i bez kruha, a ako izbacite piletinu, ovo varivo je i vegansko!</p>
+
+
+
+            </div>
+        </section>
+
+        <section id="Glavna-jela">
+        <h2>Glavna jela</h2>
+        <div class="recept">
+        <img src="https://slavonka.com.hr/wp-content/uploads/2022/01/Untitled-607.jpg" alt="Glavno jelo">
+        <h3>Piletina s rižom</h3>
+        <p>Ovaj recept se nešto dulje peče jer ipak cijelo pile u pitanju, ali nakon prvog obroka, meso otkostite i pomiješajte sa ostatkom priloga 
+            pa ga koristite za druga jela poput – punjenih, zapečenih tortilja ili brzog salata obroka!</p>
+         <hr>
+         <h3>Potrebni sastojci:</h3>
+         <li>1 cijelo pile od 1,3kg</li>
+         <li>150g smrznute mješavine grašak mrkva</li>
+         <li>100g riže okruglog ili dugog zrna (ja sam imala okruglog pa sam nju koristila)</li>
+         <li>300g vode ili temeljca</li>
+         <hr>
+         <h5>Začini za pile:</h5>
+         <li>1 žličica soli (8g ima žličica)</li>
+         <li>1 žličica suhog luka u granulama (ja kupim u Eurospinu, najjeftinij je , a stvarno dobar)</li>
+         <li>1/2 žličice crvene slatke paprike</li>
+         <hr>
+         <h4>Priprema:</h4>
+         <p>Pećnicu uključite na 180 stupnjeva i pustite da se zagrije.
+            U dovoljno dubok pekač ili tepsiju prvo istresite rižu, zatim dodajte smrznuti grašak i mrkvu pa sve podlijte s toplim temeljcem.
+            Začine promiješajte pa time istrljajte pile sa svih strana. Pile stavite na rižu, pokrijte folijom i pecite 50 minuta.
+            Nakon 50 minuta skinite foliju i pecite još 40 minuta, odnosno, dok pile ne dobije lijepu zlatnu boju i koricu.</p>
+        
+        </div>
+        </section>
+
+        <section id="Prilog">
+            <h2>Prilog</h2>
+            <div class="recept">
+            <img src="https://slavonka.com.hr/wp-content/uploads/2022/02/Untitled-650.jpg" alt="Prilog">
+            <h3>Pereci</h3>
+            <p>Sva hrana koja je kao “street food” i jede se prstima je po meni fašnička hrana, a tako su to i ovi mirisni domaći pereci!</p>
+            <hr>
+            <h3>Potrebni sastojci:</h3>
+            <li>650g glatkog brašna</li>
+            <li>1 žlica smeđeg šećera</li>
+            <li>350-370ml mlake vode</li>
+            <li>7g Dr.Oetker kvasca</li>
+            <li>50 g omekšalog maslaca</li>
+            <li>1 žličica soli</li>
+            <li>+krupna sol za posipanje kasnije</li>
+            <li>Kupka od sode bikarbone</li>
+            <li>100g sode bikarbone</li>
+            <li>3l vode</li>
+            <hr>
+            <h4>Priprema:</h4>
+            <p>U posudu za miksanje dodajte brašno, smeđi šećer i kvasac. Dodajte mlaku vodu i pustite da se kvasac zapjeni, dovoljno je par minuta.
+                Dodajte ostale sastojke i mijesite otprilike 5-10 minuta na umjerenoj brzini dok se tijesto ne krene odvajati od posude.
+                Tijesto rasporedite na 10 jednakih kuglica, a onda svaku kuglicu razvaljajte u konopac duljine 40 cm.
+                Isprepletite u perec tako da uzmete krajeve konopca, prenesete ih prema unutra, jednom isprepletete i zaljepite za donji dio.
+                U posudi zakuhajte vodu i sodu bikarbonu.
+                Svaki perec uronite u kupku na 2 minute I vadite odmah na protvan obložen papirom za pečenje. 
+                Ostavite malo mjesta između svakog pereca pošto će se proširiti tokom pečenja.
+                Pospite odozgora krupnom soli I pecite ih na 180 stupnjeva 14-16 minuta, dok ne dobiju lijepu zlatnu boju.</p>
+
+
+            </div>
+        </section>
+
+        <section id="Desert">
+            <h2>Desert</h2>
+            <div class="recept">
+            <img src="https://slavonka.com.hr/wp-content/uploads/2022/01/Untitled-591.jpg" alt="Desert">
+            <h3>Štrudlice</h3>
+            <p>Mnogima omiljeni slatkiš djetinjstva, a možete zamisliti koliko su finije kad su domaće!</p>
+            <hr>
+            <h3>Potrebni sastojci:</h3>
+            <h4>Za keks:</h4>
+            <li>110g omekšalog maslaca</li>
+            <li>100g šećera</li>
+            <li>1 jaje</li>
+            <li>1 žlica Dr.Oetker ekstrakta od vanilije</li>
+            <li>Korica od pola naranče</li>
+            <li>180 g glatkog brašna</li>
+            <li>Prstohvat cimeta</li>
+            <li>Pola žličice sode bikarbone</li>
+            <li>Prstohvat soli</li>
+            <hr>
+            <h4>Za punjenje od smokve:</h4>
+            <li>250g suhih smokava</li>
+            <li>120ml vode</li>
+            <li>Sok od pola naranče</li>
+            <li>Korica od pola naranče</li>
+            <li>1 žličica cimeta</li>
+            <li>Prstohvat soli</li>
+            <li>2 žlice meda</li>
+            <hr>
+            <h4>Priprema:</h4>
+            <p>Za početak pripremite tijesto. U posudu stavite omekšali maslac i šećer pa miksajte dok ne dobijete glatku smjesu tprilike tri minute.
+                Dodajte, zatim, jaje i vaniliju i koricu naranče pa miksajte dok se dobro ne sjedini i ne postane pjenasto  otprilike tri minute.
+                U drugoj posudi pomiješajte sve suhe sastojke brašno,cimet i sodu bikarbonu pa to prosijte u smjesu od maslaca i šećera te jaja.
+                Miksajte minutu da se sjedini. Tijesto umotajte u prozirnu foliju i stavite u hladnjak na 1.5h.
+                Dok se tijesto hladi, pripremite punjenje. Sve sastojke za punjenje osim meda stavite u posudu i kuhajte na laganoj vatri 10 minuta, odnosno, dok tekućina ne ispari.
+                Stavite tako kuhane smokve u posudu od blendera ili food procesora, dodajte med i miksajte dok ne dobijete gustoću paste.
+                Punjenje prebacite u slastičarsku vrećicu za lakše nanošenje.
+                Pećnicu uključite na 180 stupnjeva, a posudu za pečenje obložite papriom za pečenje.
+                Tijesto razvaljajte na pobrašnjenoj površini u dimenziju 25 puta 35 cm.
+                Pazite da rubovi budu ravni, pa ih poravnajte nožem. Tako razvaljano tijesto izrežite na tri trake 3x35cm.
+                Po sredini po dužini trake nanesite smjesu od smokava. Bit će dovoljno 1cm debljine tako da imate za sve tri trake.
+                Sada zatvorite štrudlice tako da lijevu i desnu stranu trake dignete prema gore i zaljepite na vrhu.
+                Slažite štruce štrudlica u posudu za pečenje tako da strana gdje je spoj bude prema dolje.
+                Pomozite si sa dugačkom spatulom ili nožem za prenošenje u posudu za pečenje.
+                Pecite 20-25 minuta, a onda pustite da se prohladi na posudi za pečenje.
+                Izrežite u štrudlice debljine 5cm.
+                Čuvajte u zatvorenoj posudi.</p>
+            
+
+
+
+    </div>
+    </section>
+    </main>
+    
+    <div id="kontakt">
+        <h3>Kontaktirajte nas</h3>
+        <input type="text" placeholder="Vaše ime">
+        <input type="email" placeholder="Vaš email">
+        <button>Pošalji</button>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Recepti. Sva prava pridržana.</p>
+        <a href="#">Facebook</a>
+        <a href="#">Instagram</a>
+    </footer>
+</body>
+</html>
